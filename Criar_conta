@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b3b3b3;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .caixa-login {
+            display: flex;
+            width: 85%;
+            max-width: 1200px;
+            height: 90%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .lado-esquerdo {
+            width: 50%;
+            background: linear-gradient(135deg, #0056d2 50%, #4a90e2 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo span {
+            color: #ffcc00;
+            /* Cor diferente para destacar o texto */
+        }
+
+        .lado-direito {
+            width: 50%;
+            padding: 40px;
+            position: relative;
+        }
+
+        .fechar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #999;
+        }
+
+        .titulo {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .grupo-formulario {
+            margin-bottom: 15px;
+        }
+
+        .grupo-formulario input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .grupo-formulario label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .botao {
+            width: 100%;
+            padding: 12px;
+            background-color: #0056d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .botao:hover {
+            background-color: #003e99;
+            /* Efeito de hover */
+        }
+
+        .grupo-checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .grupo-checkbox input {
+            margin-right: 10px;
+        }
+
+        .grupo-checkbox a {
+            color: #0056d2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .grupo-checkbox a:hover {
+            text-decoration: underline;
+            /* Efeito de hover para o link */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="caixa-login">
+            <div class="lado-esquerdo">
+                <div class="logo">
+                    Venda<span>Simples</span>
+                </div>
+            </div>
+            <div class="lado-direito">
+                <button class="fechar" >&times;</button>
+                <div class="titulo">Crie sua conta</div>
+                <div class="grupo-formulario">
+                    <label for="email">Dados do cadastro</label>
+                    <input type="email" id="email" placeholder="Email@gmail.com">
+                </div>
+                <div class="grupo-formulario">
+                    <input type="password" placeholder="Senha">
+                </div>
+                <div class="grupo-formulario">
+                    <input type="date" placeholder="Data de nascimento">
+                </div>
+                <div class="grupo-formulario">
+                    <input type="tel" placeholder="Telefone">
+                </div>
+                <button class="botao">Cadastre-se</button>
+                <div class="grupo-checkbox">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Clicando, você estará concordando com os <a href="#">termos e políticas</a> da
+                        página</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
