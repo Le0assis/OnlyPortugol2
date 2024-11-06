@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title>Venda Simples</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .cabecalho, .nav, .rodape {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cabecalho img, .rodape img {
+            height: 50px;
+        }
+
+        .barra-pesquisa input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .icones i {
+            font-size: 24px;
+            margin-left: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+
+        .caminho {
+            margin: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .produto {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imagem img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .detalhes h1, .descricao h2, .info-tecnica h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .avaliacao i {
+            color: #ffcc00;
+            margin-right: 5px;
+        }
+
+        .preco {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .variacoes img, .quantidade input {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .quantidade input {
+            width: 50px;
+            padding: 5px;
+        }
+
+        .botao-comprar button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .descricao p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .info-tecnica table, .info-tecnica th, .info-tecnica td {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .rodape .links a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <img src="https://placehold.co/150x50?text=Logo" alt="Logo Venda Simples" />
+            <div class="barra-pesquisa">
+                <input type="text" placeholder="Buscar produtos" />
+            </div>
+            <div class="icones">
+                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+
+        <div class="nav">
+            <a href="#">Novidades</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Móveis</a>
+            <a href="#">Cozinhas</a>
+            <a href="#">Ambientes</a>
+            <a href="#">Acessórios</a>
+            <a href="#">Tapetes</a>
+            <a href="#">Infantil</a>
+        </div>
+
+        <div class="caminho">
+            <a href="#">Home</a> &gt; <a href="#">Móveis</a> &gt; <a href="#">Mesas de Cabeceira</a> &gt; Mesa de cabeceira retrô
+        </div>
+
+        <div class="produto">
+            <div class="imagem">
+                <img src="https://placehold.co/500x500?text=Imagem+Produto" alt="Mesa de cabeceira" />
+            </div>
+            <div class="detalhes">
+                <h1>Mesa de cabeceira retrô pérola preta</h1>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>9 Avaliações</span>
+                </div>
+                <div class="preco">R$ 160,00</div>
+                <div class="parcelamento">Em até 10x de R$ 16,00 sem juros</div>
+                <div class="variacoes">
+                    <img src="https://placehold.co/50x50?text=Var1" alt="Variação 1" />
+                    <img src="https://placehold.co/50x50?text=Var2" alt="Variação 2" />
+                    <img src="https://placehold.co/50x50?text=Var3" alt="Variação 3" />
+                </div>
+                <div class="quantidade">
+                    <label for="quantidade">Quantidade:</label>
+                    <input id="quantidade" type="number" value="1" />
+                </div>
+                <div class="botao-comprar">
+                    <button>Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="descricao">
+            <h2>Descrição</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+
+        <div class="info-tecnica">
+            <h2>Informações técnicas</h2>
+            <table>
+                <tr><th>Peso</th><td>0.9 kg</td></tr>
+                <tr><th>Largura</th><td>65 cm</td></tr>
+                <tr><th>Profundidade</th><td>35 cm</td></tr>
+                <tr><th>Altura</th><td>50 cm</td></tr>
+                <tr><th>Garantia</th><td>10 dias</td></tr>
+            </table>
+        </div>
+
+        <div class="rodape">
+            <img src="https://placehold.co/150x30?text=Logo" alt="Logo Venda Simples" />
+            <div class="links">
+                <a href="#">Topo</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
