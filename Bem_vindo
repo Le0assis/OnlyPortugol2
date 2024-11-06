@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Simples</title>
+    <style>
+        /* Estilos Globais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bfbfbf;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Estrutura do Container */
+        .caixa-login {
+            display: flex;
+            width: 85%;
+            max-width: 1200px;
+            height: 90%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Lado Esquerdo com Logo */
+        .lado-esquerdo {
+            width: 50%;
+            background: linear-gradient(135deg, #0047bb 50%, #4a90e2 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .lado-esquerdo img {
+            width: 180px;
+        }
+
+        /* Lado Direito com Formulário */
+        .lado-direito {
+            width: 50%;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .lado-direito h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .lado-direito p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Campos e Botões */
+        .lado-direito input,
+        .lado-direito button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .lado-direito input {
+            border: 1px solid #ccc;
+        }
+
+        .lado-direito button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .lado-direito .botao-google {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+        .lado-direito .botao-google img {
+            width: 18px;
+            margin-right: 8px;
+        }
+
+        .lado-direito a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .lado-direito a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa-login">
+        <div class="lado-esquerdo">
+            <img alt="Logo" src="https://placehold.co/180x80?text=Logo" />
+        </div>
+        <div class="lado-direito">
+            <h1>Bem-vindos</h1>
+            <p>Entre na sua conta</p>
+            <input type="text" placeholder="Email@gmail.com">
+            <input type="password" placeholder="Senha">
+            <button>Login</button>
+            <p>ou continue com</p>
+            <button class="botao-google">
+                <img src="https://placehold.co/18x18?text=G" alt="Google Logo">
+                Google
+            </button>
+            <p>Clicando em continuar, você concorda com os <a href="#">termos e políticas</a>.</p>
+            <p>Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
